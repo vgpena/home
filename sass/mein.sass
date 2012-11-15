@@ -1,0 +1,113 @@
+@import "compass/css3/images"
+@import "compass/css3/background-size"
+@import "compass/css3/border-radius"
+
+$pane-height: 1000px
+
+body
+	margin: 0px
+
+.pane
+	position: absolute
+	margin: 0px
+	width: 100%
+	height: $pane-height
+	+background-size(cover)
+	
+.text-box
+	width: 40%
+	min-width: 300px
+	max-width: 600px
+	margin: $pane-height/3 auto auto auto
+	background-color: rgba(255, 255, 255, 0.6)
+	padding: 20px
+	+border-radius(20px)
+	
+	p
+		margin: 0px
+		font-size: 20px
+		line-height: 30px
+
+.pane1
+	+background-image(url("../images/studs.jpg"))
+	
+.pane2
+	top: $pane-height
+	+background-image(url("../images/finney.JPG"))
+
+.pane3
+	top: $pane-height*2
+	+background-image(url("../images/lion-dance.JPG"))
+	
+.pane4
+	top: $pane-height*3
+	+background-image(url("../images/sciency-thing-2.jpg"))
+
+.pane5
+	top: $pane-height*4
+	+background-image(url("../images/green.jpg"))
+	
+.pane6
+	top: $pane-height*5
+	
+.invisipane
+	top: $pane-height*5
+	
+	.text-box
+		background-color: rgba(255, 255, 255, .8)
+
+.subpane
+	position: absolute
+	width:  50%
+	height:  $pane-height/2
+	margin:  0px
+	+background-size(cover)
+
+.subpane1
+	top: 0px
+	left: 50%
+	+background-image(url("../images/bike-co-op.jpg"))
+	
+.subpane2
+	top: 0px
+	left: 0px
+	+background-image(url("../images/selk.JPG"))
+
+.subpane3
+	top: $pane-height/2
+	left: 0px
+	+background-image(url("../images/dance.jpg"))
+	
+.subpane4
+	top: $pane-height/2
+	left: 50%
+	+background-image(url("../images/sciencey-thing.JPG"))
+	
+.search
+	text-align: center
+	
+.search-form
+	width: 90%
+	margin: auto
+	
+	input
+		width: 90%
+		margin: 20px 3%
+		font-size: 22px
+		height:  30px
+		
+.topnav
+	position: fixed
+	top: 0px
+	left: 0px
+	z-index: 20
+	padding: 10px 10px 20px 30px
+	background-color: rgba(0, 0, 0, .2)
+	width: 300px
+	+border-right-radius(70px)
+	
+	.nav-img
+		margin-left: 10px
+	
+	img
+		margin: auto
