@@ -103,39 +103,81 @@ body {
   width: 60%;
 }
 /* line 81, ../sass/mein.sass */
-.t-pane .pane-r {
-  right: 0%;
-}
-/* line 84, ../sass/mein.sass */
 .t-pane .l-sub-l {
   top: 0px;
   left: 0%;
   background-image: url("../images/sciencey-thing-3.jpg");
 }
-/* line 89, ../sass/mein.sass */
+/* line 86, ../sass/mein.sass */
 .t-pane .l-sub-l .text-box {
   margin-top: 1005.6px;
 }
-/* line 92, ../sass/mein.sass */
+/* line 89, ../sass/mein.sass */
 .t-pane .l-sub-r {
   top: 0px;
   left: 50%;
   background-image: url("../images/ensemble.jpg");
 }
-/* line 97, ../sass/mein.sass */
+/* line 94, ../sass/mein.sass */
 .t-pane .l-sub-r .text-box {
   margin-top: 502.8px;
 }
-
+/* line 97, ../sass/mein.sass */
+.t-pane .pane-r {
+  right: 0%;
+}
 /* line 100, ../sass/mein.sass */
-.school {
+.t-pane .pane-r .subpane {
+  width: 100%;
+  height: 419px;
+}
+/* line 104, ../sass/mein.sass */
+.t-pane .pane-r .text-box {
+  width: 20%;
+}
+/* line 108, ../sass/mein.sass */
+.t-pane .r-sub-t {
+  top: 0px;
+  right: 0px;
+  background-image: url("../images/speak.jpg");
+  background-position: 80% 25%;
+}
+/* line 114, ../sass/mein.sass */
+.t-pane .r-sub-t .text-box {
+  margin-top: 209.5px;
+}
+/* line 117, ../sass/mein.sass */
+.t-pane .r-sub-m {
+  top: 419px;
+  right: 0px;
+  background-image: url("../images/camera.JPG");
+  background-position: 20% 30%;
+}
+/* line 123, ../sass/mein.sass */
+.t-pane .r-sub-m .text-box {
+  margin-top: 209.5px;
+}
+/* line 126, ../sass/mein.sass */
+.t-pane .r-sub-b {
+  top: 838px;
+  right: 0px;
+  background-image: url("../images/art.jpg");
+  background-position: 20% 30%;
+}
+/* line 132, ../sass/mein.sass */
+.t-pane .r-sub-b .text-box {
+  margin-top: 209.5px;
+}
+
+/* line 135, ../sass/mein.sass */
+.school, .resource {
   text-align: center;
   font-family: "Georgia";
   size: 60px;
   color: #222222;
 }
 
-/* line 106, ../sass/mein.sass */
+/* line 141, ../sass/mein.sass */
 .subpane {
   position: absolute;
   width: 50%;
@@ -147,45 +189,45 @@ body {
   background-size: cover;
 }
 
-/* line 113, ../sass/mein.sass */
+/* line 148, ../sass/mein.sass */
 .subpane1 {
   top: 0px;
   left: 50%;
   background-image: url("../images/bike-co-op.jpg");
 }
 
-/* line 118, ../sass/mein.sass */
+/* line 153, ../sass/mein.sass */
 .subpane2 {
   top: 0px;
   left: 0px;
   background-image: url("../images/selk.JPG");
 }
 
-/* line 123, ../sass/mein.sass */
+/* line 158, ../sass/mein.sass */
 .subpane3 {
   top: 628.5px;
   left: 0px;
   background-image: url("../images/dance.jpg");
 }
 
-/* line 128, ../sass/mein.sass */
+/* line 163, ../sass/mein.sass */
 .subpane4 {
   top: 628.5px;
   left: 50%;
   background-image: url("../images/sciencey-thing.JPG");
 }
 
-/* line 133, ../sass/mein.sass */
+/* line 168, ../sass/mein.sass */
 .search {
   text-align: center;
 }
 
-/* line 136, ../sass/mein.sass */
+/* line 171, ../sass/mein.sass */
 .search-form {
   width: 90%;
   margin: auto;
 }
-/* line 140, ../sass/mein.sass */
+/* line 175, ../sass/mein.sass */
 .search-form input {
   width: 90%;
   margin: 20px 3%;
@@ -194,7 +236,7 @@ body {
   line-height: 30px;
 }
 
-/* line 147, ../sass/mein.sass */
+/* line 182, ../sass/mein.sass */
 .topnav {
   position: fixed;
   top: 0px;
@@ -205,7 +247,7 @@ body {
   width: 100%;
 }
 
-/* line 156, ../sass/mein.sass */
+/* line 191, ../sass/mein.sass */
 .nav-small {
   -moz-border-radius-topright: 70px;
   -webkit-border-top-right-radius: 70px;
@@ -214,17 +256,17 @@ body {
   -webkit-border-bottom-right-radius: 70px;
   border-bottom-right-radius: 70px;
 }
-/* line 161, ../sass/mein.sass */
+/* line 196, ../sass/mein.sass */
 .nav-small .navlist .nav-img {
   margin-right: 30px;
 }
 
-/* line 164, ../sass/mein.sass */
+/* line 199, ../sass/mein.sass */
 .logo {
   margin-top: 20px;
 }
 
-/* line 167, ../sass/mein.sass */
+/* line 202, ../sass/mein.sass */
 .navlist {
   position: relative;
   display: inline;
@@ -233,19 +275,19 @@ body {
   font-family: "Georgia";
   font-size: 18px;
 }
-/* line 175, ../sass/mein.sass */
+/* line 210, ../sass/mein.sass */
 .navlist li {
   float: left;
   display: inline-block;
   width: 16.66667%;
   line-height: 30px;
 }
-/* line 181, ../sass/mein.sass */
+/* line 216, ../sass/mein.sass */
 .navlist .mid {
   display: inline-block;
   width: 66.66667%;
 }
-/* line 184, ../sass/mein.sass */
+/* line 219, ../sass/mein.sass */
 .navlist .mid ul {
   width: 100%;
   height: 90px;
@@ -255,22 +297,22 @@ body {
   -o-column-count: 4;
   column-count: 4;
 }
-/* line 189, ../sass/mein.sass */
+/* line 224, ../sass/mein.sass */
 .navlist .mid ul li {
   width: 100%;
 }
-/* line 192, ../sass/mein.sass */
+/* line 227, ../sass/mein.sass */
 .navlist .nav-img {
   margin-right: 50px;
   float: right;
 }
 
-/* line 198, ../sass/mein.sass */
+/* line 233, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
 }
 
-/* line 202, ../sass/mein.sass */
+/* line 237, ../sass/mein.sass */
 .slide {
   position: absolute;
   top: 628.5px;
@@ -283,18 +325,18 @@ body {
   -o-border-radius: 40px;
   border-radius: 40px;
 }
-/* line 210, ../sass/mein.sass */
+/* line 245, ../sass/mein.sass */
 .slide h2 {
   margin-top: 16px;
   margin-left: 22px;
 }
 
-/* line 214, ../sass/mein.sass */
+/* line 249, ../sass/mein.sass */
 .slide-left {
   left: 20px;
 }
 
-/* line 217, ../sass/mein.sass */
+/* line 252, ../sass/mein.sass */
 .slide-right {
   right: 20px;
 }
