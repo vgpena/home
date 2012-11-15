@@ -9,6 +9,7 @@ $col-width: (100/$num-cols)*1%
 
 body
 	margin: 0px
+	overflow-x: hidden
 
 .pane
 	position: absolute
@@ -30,9 +31,6 @@ body
 		margin: 0px
 		font-size: 20px
 		line-height: 30px
-
-.pane1
-	+background-image(url("../images/studs.jpg"))
 	
 .pane2
 	top: $pane-height
@@ -58,6 +56,26 @@ body
 	
 	.text-box
 		background-color: rgba(255, 255, 255, .8)
+		
+.t-pane
+	width: 300%
+	left: -100%
+	
+	.pane
+		width: 33.333333%
+		display: inline
+		
+	.pane1
+		right: 33.333333%
+		+background-image(url("../images/studs.jpg"))
+		
+	.pane-l
+		left: 0%
+		background-color: rgba(0, 0, 0, .8)
+	
+	.pane-r
+		right: 0%
+		background-color: rgba(0, 0, 0, .5)
 
 .subpane
 	position: absolute
@@ -153,3 +171,22 @@ body
 
 	input
 		line-height: 30px
+		
+		
+.slide
+	position: absolute
+	top: $pane-height/2
+	background-color: rgba(255, 255, 255, .7)
+	width: 80px
+	height: 80px
+	+border-radius(40px)
+	
+	h2
+		margin-top: 16px
+		margin-left: 22px
+	
+.slide-left
+	left: 20px
+
+.slide-right
+	right: 20px

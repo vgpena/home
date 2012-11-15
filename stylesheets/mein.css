@@ -1,9 +1,10 @@
 /* line 10, ../sass/mein.sass */
 body {
   margin: 0px;
+  overflow-x: hidden;
 }
 
-/* line 13, ../sass/mein.sass */
+/* line 14, ../sass/mein.sass */
 .pane {
   position: absolute;
   margin: 0px;
@@ -15,7 +16,7 @@ body {
   background-size: cover;
 }
 
-/* line 20, ../sass/mein.sass */
+/* line 21, ../sass/mein.sass */
 .text-box {
   width: 40%;
   min-width: 300px;
@@ -29,57 +30,78 @@ body {
   -o-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 29, ../sass/mein.sass */
+/* line 30, ../sass/mein.sass */
 .text-box p {
   margin: 0px;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 34, ../sass/mein.sass */
-.pane1 {
-  background-image: url("../images/studs.jpg");
-}
-
-/* line 37, ../sass/mein.sass */
+/* line 35, ../sass/mein.sass */
 .pane2 {
   top: 1257px;
   background-image: url("../images/finney.JPG");
 }
 
-/* line 41, ../sass/mein.sass */
+/* line 39, ../sass/mein.sass */
 .pane3 {
   top: 2514px;
   background-image: url("../images/lion-dance.JPG");
 }
 
-/* line 45, ../sass/mein.sass */
+/* line 43, ../sass/mein.sass */
 .pane4 {
   top: 3771px;
   background-image: url("../images/sciency-thing-2.jpg");
 }
 
-/* line 49, ../sass/mein.sass */
+/* line 47, ../sass/mein.sass */
 .pane5 {
   top: 5028px;
   background-image: url("../images/green.jpg");
 }
 
-/* line 53, ../sass/mein.sass */
+/* line 51, ../sass/mein.sass */
 .pane6 {
   top: 6285px;
 }
 
-/* line 56, ../sass/mein.sass */
+/* line 54, ../sass/mein.sass */
 .invisipane {
   top: 6285px;
 }
-/* line 59, ../sass/mein.sass */
+/* line 57, ../sass/mein.sass */
 .invisipane .text-box {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 62, ../sass/mein.sass */
+/* line 60, ../sass/mein.sass */
+.t-pane {
+  width: 300%;
+  left: -100%;
+}
+/* line 64, ../sass/mein.sass */
+.t-pane .pane {
+  width: 33.33333%;
+  display: inline;
+}
+/* line 68, ../sass/mein.sass */
+.t-pane .pane1 {
+  right: 33.33333%;
+  background-image: url("../images/studs.jpg");
+}
+/* line 72, ../sass/mein.sass */
+.t-pane .pane-l {
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 76, ../sass/mein.sass */
+.t-pane .pane-r {
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 80, ../sass/mein.sass */
 .subpane {
   position: absolute;
   width: 50%;
@@ -91,45 +113,45 @@ body {
   background-size: cover;
 }
 
-/* line 69, ../sass/mein.sass */
+/* line 87, ../sass/mein.sass */
 .subpane1 {
   top: 0px;
   left: 50%;
   background-image: url("../images/bike-co-op.jpg");
 }
 
-/* line 74, ../sass/mein.sass */
+/* line 92, ../sass/mein.sass */
 .subpane2 {
   top: 0px;
   left: 0px;
   background-image: url("../images/selk.JPG");
 }
 
-/* line 79, ../sass/mein.sass */
+/* line 97, ../sass/mein.sass */
 .subpane3 {
   top: 628.5px;
   left: 0px;
   background-image: url("../images/dance.jpg");
 }
 
-/* line 84, ../sass/mein.sass */
+/* line 102, ../sass/mein.sass */
 .subpane4 {
   top: 628.5px;
   left: 50%;
   background-image: url("../images/sciencey-thing.JPG");
 }
 
-/* line 89, ../sass/mein.sass */
+/* line 107, ../sass/mein.sass */
 .search {
   text-align: center;
 }
 
-/* line 92, ../sass/mein.sass */
+/* line 110, ../sass/mein.sass */
 .search-form {
   width: 90%;
   margin: auto;
 }
-/* line 96, ../sass/mein.sass */
+/* line 114, ../sass/mein.sass */
 .search-form input {
   width: 90%;
   margin: 20px 3%;
@@ -138,7 +160,7 @@ body {
   line-height: 30px;
 }
 
-/* line 103, ../sass/mein.sass */
+/* line 121, ../sass/mein.sass */
 .topnav {
   position: fixed;
   top: 0px;
@@ -149,7 +171,7 @@ body {
   width: 100%;
 }
 
-/* line 112, ../sass/mein.sass */
+/* line 130, ../sass/mein.sass */
 .nav-small {
   -moz-border-radius-topright: 70px;
   -webkit-border-top-right-radius: 70px;
@@ -158,17 +180,17 @@ body {
   -webkit-border-bottom-right-radius: 70px;
   border-bottom-right-radius: 70px;
 }
-/* line 117, ../sass/mein.sass */
+/* line 135, ../sass/mein.sass */
 .nav-small .navlist .nav-img {
   margin-right: 30px;
 }
 
-/* line 120, ../sass/mein.sass */
+/* line 138, ../sass/mein.sass */
 .logo {
   margin-top: 20px;
 }
 
-/* line 123, ../sass/mein.sass */
+/* line 141, ../sass/mein.sass */
 .navlist {
   position: relative;
   display: inline;
@@ -177,19 +199,19 @@ body {
   font-family: "Georgia";
   font-size: 18px;
 }
-/* line 131, ../sass/mein.sass */
+/* line 149, ../sass/mein.sass */
 .navlist li {
   float: left;
   display: inline-block;
   width: 16.66667%;
   line-height: 30px;
 }
-/* line 137, ../sass/mein.sass */
+/* line 155, ../sass/mein.sass */
 .navlist .mid {
   display: inline-block;
   width: 66.66667%;
 }
-/* line 140, ../sass/mein.sass */
+/* line 158, ../sass/mein.sass */
 .navlist .mid ul {
   width: 100%;
   height: 90px;
@@ -199,17 +221,46 @@ body {
   -o-column-count: 4;
   column-count: 4;
 }
-/* line 145, ../sass/mein.sass */
+/* line 163, ../sass/mein.sass */
 .navlist .mid ul li {
   width: 100%;
 }
-/* line 148, ../sass/mein.sass */
+/* line 166, ../sass/mein.sass */
 .navlist .nav-img {
   margin-right: 50px;
   float: right;
 }
 
-/* line 154, ../sass/mein.sass */
+/* line 172, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
+}
+
+/* line 176, ../sass/mein.sass */
+.slide {
+  position: absolute;
+  top: 628.5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+/* line 184, ../sass/mein.sass */
+.slide h2 {
+  margin-top: 16px;
+  margin-left: 22px;
+}
+
+/* line 188, ../sass/mein.sass */
+.slide-left {
+  left: 20px;
+}
+
+/* line 191, ../sass/mein.sass */
+.slide-right {
+  right: 20px;
 }
