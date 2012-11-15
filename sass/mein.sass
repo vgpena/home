@@ -71,11 +71,37 @@ body
 		
 	.pane-l
 		left: 0%
-		background-color: rgba(0, 0, 0, .8)
+		
+		.subpane
+			height: $pane-height
+			
+		.text-box
+			width: 60%
 	
 	.pane-r
 		right: 0%
-		background-color: rgba(0, 0, 0, .5)
+		
+	.l-sub-l
+		top: 0px
+		left: 0%
+		+background-image(url("../images/sciencey-thing-3.jpg"))
+		
+		.text-box
+			margin-top: $pane-height*(4/5)
+		
+	.l-sub-r
+		top: 0px
+		left: 50%
+		+background-image(url("../images/ensemble.jpg"))
+		
+		.text-box
+			margin-top: $pane-height*(2/5)
+			
+.school
+	text-align: center
+	font-family: "Georgia"
+	size: 60px
+	color: #222
 
 .subpane
 	position: absolute
