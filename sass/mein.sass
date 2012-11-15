@@ -2,6 +2,8 @@
 @import "compass/css3/background-size"
 @import "compass/css3/border-radius"
 @import "compass/css3/columns"
+@import "compass/css3/box-shadow"
+@import "compass/css3/transition"
 
 $pane-height: 1257px
 $num-cols: 6
@@ -9,6 +11,7 @@ $col-width: (100/$num-cols)*1%
 
 body
 	margin: 0px
+	width: 100%
 	overflow-x: hidden
 
 .pane
@@ -17,6 +20,7 @@ body
 	width: 100%
 	height: $pane-height
 	+background-size(cover)
+	overflow-x: hidden
 	
 .text-box
 	width: 40%
@@ -56,7 +60,12 @@ body
 	
 	.text-box
 		background-color: rgba(255, 255, 255, .8)
+		+transition-property(background-color)
+		+transition-duration(1s)
 		
+	.text-box:hover
+		background-color: rgba(255, 255, 255, .9)
+	
 .t-pane
 	width: 300%
 	left: -100%
@@ -135,7 +144,8 @@ body
 .school, .resource
 	text-align: center
 	font-family: "Georgia"
-	size: 60px
+	font-size: 60px
+	line-height: 70px
 	color: #222
 
 .subpane
@@ -227,6 +237,13 @@ body
 	.nav-img
 		margin-right: 50px
 		float: right
+		opacity: .9
+		
+		+transition-property(opacity)
+		+transition-duration(1s)
+		
+	.nav-img:hover
+		opacity: 1
 		
 .nav-search
 
