@@ -149,12 +149,22 @@ body {
   width: 100%;
 }
 
-/* line 114, ../sass/mein.sass */
+/* line 112, ../sass/mein.sass */
+.nav-small {
+  -moz-border-radius-topright: 70px;
+  -webkit-border-top-right-radius: 70px;
+  border-top-right-radius: 70px;
+  -moz-border-radius-bottomright: 70px;
+  -webkit-border-bottom-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+/* line 115, ../sass/mein.sass */
 .logo {
   margin-top: 20px;
 }
 
-/* line 117, ../sass/mein.sass */
+/* line 118, ../sass/mein.sass */
 .navlist {
   position: relative;
   display: inline;
@@ -163,19 +173,19 @@ body {
   font-family: "Georgia";
   font-size: 18px;
 }
-/* line 125, ../sass/mein.sass */
+/* line 126, ../sass/mein.sass */
 .navlist li {
   float: left;
   display: inline-block;
   width: 16.66667%;
   line-height: 30px;
 }
-/* line 131, ../sass/mein.sass */
+/* line 132, ../sass/mein.sass */
 .navlist .mid {
   display: inline-block;
   width: 66.66667%;
 }
-/* line 134, ../sass/mein.sass */
+/* line 135, ../sass/mein.sass */
 .navlist .mid ul {
   width: 100%;
   height: 90px;
@@ -185,17 +195,17 @@ body {
   -o-column-count: 4;
   column-count: 4;
 }
-/* line 139, ../sass/mein.sass */
+/* line 140, ../sass/mein.sass */
 .navlist .mid ul li {
   width: 100%;
 }
-/* line 142, ../sass/mein.sass */
+/* line 143, ../sass/mein.sass */
 .navlist .nav-img {
-  margin-right: 50px;
+  margin-right: 30px;
   float: right;
 }
 
-/* line 148, ../sass/mein.sass */
+/* line 149, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
 }
