@@ -56,6 +56,8 @@
 				</div>
 			</div>
 			<div class="pane pane1">
+				<canvas id="pane1-canvas">
+				</canvas>
 				<div class="text-box">
 					<p>
 						Oberlin is a place of intense energy and creativity, built on a foundation of academic, artistic, and musical excellence. With its longstanding commitments to access, diversity, and inclusion, Oberlin is the ideal laboratory in which to study and design the world we <em>want</em>.
@@ -101,6 +103,8 @@
 					 Oberlin is the only institution where a top-ranked <a href="">liberal arts college</a> and a world-renowned <a href="">conservatory of music</a> share a seamless <a href="">student culture</a> and <a href="">campus</a>, including an <a href="">art museum</a> that is known as one of the best in the country.
 				</p>
 			</div>
+			<canvas id="pane2-canvas">
+			</canvas>
 		</div>
 		<div class="pane pane3">
 			<div class="text-box">
@@ -108,6 +112,8 @@
 					Oberlin has been on the front lines of changing the world for <a href="">almost two centuries</a>, often serving as the prototype for progress even in the face of strong resistance.
 				</p>
 			</div>
+			<canvas id="pane3-canvas">
+			</canvas>
 		</div>
 		<div class="pane pane4">
 			<div class="text-box">
@@ -115,13 +121,18 @@
 					When you ask our alumni what they value most about their Oberlin experiences, most will say their life-long relationships with our <a href="">faculty</a>. Explore our <a href="">college departments</a>, <a href="">conservatory departments</a>, and our <a href="">course catalog</a> to get a sense of the many things you can study here.
 				</p>
 			</div>
+			<canvas id="pane4-canvas">
+			</canvas>
 		</div>
 		<div class="pane pane5">
+			<canvas id="pane5-canvas">
+			</canvas>
 			<div class="text-box">
 				<p>
 					Green issues are of critical importance to us. We have partnered with the city of Oberlin to develop the ultimate <a href="">working model of full-spectrum sustainability</a>.
 				</p>
 			</div>
+
 		</div>
 		<div class="pane pane6">
 			<div class="subpane subpane1">
@@ -134,6 +145,8 @@
 			</div>
 		</div>
 		<div class="pane invisipane">
+			<canvas id="pane6-canvas">
+			</canvas>
 			<div class="text-box">
 				<h1 class="search">
 					What do you want to explore?
@@ -143,5 +156,137 @@
 				</form>
 			</div>
 		</div>
+		<script>
+			var a=document.getElementById("pane1-canvas");
+			var startheight,
+				startright,
+				startleft,
+				latitude;
+			$(a).each(function(){
+				var pane = $(this).parent();
+				$(".text-box", pane).each(function(){
+					startheight = parseInt($(this).position().top + $(this).outerHeight());
+					startright = parseInt($(this).position().left + $(this).outerWidth());
+					startleft = parseInt($(this).position().left);
+					latitude = parseInt($(this).position().top + $(this).outerHeight()/2);
+				});
+				a.height = pane.height();
+				a.width = pane.width();
+			});
+			var atx=a.getContext("2d");
+			atx.lineWidth = 2;
+			atx.moveTo($(window).width()/2, startheight);
+			atx.lineTo($(window).width()/2, $(window).height());
+			atx.moveTo(startright, latitude);
+			atx.lineTo($(window).width(), latitude);
+			atx.moveTo(startleft, latitude);
+			atx.lineTo(0, latitude);
+			atx.strokeStyle = "rgba(255,255,255,0.6)";
+			atx.stroke();
+			
+			
+			var b=document.getElementById("pane2-canvas");
+			var startheight;
+			var endheight;
+			$(b).each(function(){
+				var pane = $(this).parent();
+				$(".text-box", pane).each(function(){
+					endheight = parseInt($(this).position().top);
+					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
+				});
+				b.height = pane.height();
+				b.width = pane.width();
+			});
+			var btx=b.getContext("2d");
+			btx.lineWidth = 2;
+			btx.strokeStyle = "rgba(255,255,255,0.6)";
+			btx.moveTo($(window).width()/2, 0);
+			btx.lineTo($(window).width()/2, endheight);
+			btx.moveTo($(window).width()/2, startheight);
+			btx.lineTo($(window).width()/2, $(window).height());
+			btx.stroke();
+			
+			var c=document.getElementById("pane3-canvas");
+			var startheight;
+			var endheight;
+			$(c).each(function(){
+				var pane = $(this).parent();
+				$(".text-box", pane).each(function(){
+					endheight = parseInt($(this).position().top);
+					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
+				});
+				c.height = pane.height();
+				c.width = pane.width();
+			});
+			var ctx=c.getContext("2d");
+			ctx.lineWidth = 2;
+			ctx.strokeStyle = "rgba(255,255,255,0.6)";
+			ctx.moveTo($(window).width()/2, 0);
+			ctx.lineTo($(window).width()/2, endheight);
+			ctx.moveTo($(window).width()/2, startheight);
+			ctx.lineTo($(window).width()/2, $(window).height());
+			ctx.stroke();
+			
+			var d=document.getElementById("pane4-canvas");
+			var startheight;
+			var endheight;
+			$(d).each(function(){
+				var pane = $(this).parent();
+				$(".text-box", pane).each(function(){
+					endheight = parseInt($(this).position().top);
+					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
+				});
+				d.height = pane.height();
+				d.width = pane.width();
+			});
+			var dtx=d.getContext("2d");
+			dtx.lineWidth = 2;
+			dtx.strokeStyle = "rgba(255,255,255,0.6)";
+			dtx.moveTo($(window).width()/2, 0);
+			dtx.lineTo($(window).width()/2, endheight);
+			dtx.moveTo($(window).width()/2, startheight);
+			dtx.lineTo($(window).width()/2, $(window).height());
+			dtx.stroke();
+			
+			var e=document.getElementById("pane5-canvas");
+			var startheight;
+			var endheight;
+			$(e).each(function(){
+				var pane = $(this).parent();
+				$(".text-box", pane).each(function(){
+					endheight = parseInt($(this).position().top);
+					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
+				});
+				e.height = pane.height();
+				e.width = pane.width();
+			});
+			var etx=e.getContext("2d");
+			etx.lineWidth = 2;
+			etx.strokeStyle = "rgba(255,255,255,0.6)";
+			etx.moveTo($(window).width()/2, 0);
+			etx.lineTo($(window).width()/2, endheight);
+			etx.moveTo($(window).width()/2, startheight);
+			etx.lineTo($(window).width()/2, $(window).height());
+			etx.stroke();
+			
+			var f=document.getElementById("pane6-canvas");
+			var startheight;
+			var endheight;
+			$(f).each(function(){
+				var pane = $(this).parent();
+				$(".text-box", pane).each(function(){
+					endheight = parseInt($(this).position().top);
+				});
+				f.height = pane.height();
+				f.width = pane.width();
+			});
+			var ftx=f.getContext("2d");
+			ftx.lineWidth = 2;
+			ftx.strokeStyle = "rgba(255,255,255,0.6)";
+			ftx.moveTo($(window).width()/2, 0);
+			ftx.lineTo($(window).width()/2, endheight);
+			ftx.stroke();
+		</script>
+		
 	</body>
 </html>

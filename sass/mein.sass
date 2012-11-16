@@ -9,9 +9,13 @@ $pane-height: 1257px
 $num-cols: 6
 $col-width: (100/$num-cols)*1%
 
+html
+	width: 100%
+	overflow-x: hidden
+
 body
 	margin: 0px
-	width: 100%
+	width: 900px
 	overflow-x: hidden
 
 .pane
@@ -22,14 +26,19 @@ body
 	+background-size(cover)
 	overflow-x: hidden
 	
+canvas
+	position: absolute
+	top: 0px
+	
 .text-box
-	width: 40%
-	min-width: 300px
-	max-width: 600px
-	margin: $pane-height/3 auto auto auto
+	position: absolute
+	top: 34%
+	width: 30%
+	left: 35%
 	background-color: rgba(255, 255, 255, 0.6)
 	padding: 20px
 	+border-radius(20px)
+	z-index: 40
 	
 	p
 		margin: 0px
@@ -62,6 +71,7 @@ body
 		background-color: rgba(255, 255, 255, .8)
 		+transition-property(background-color)
 		+transition-duration(1s)
+		top: 42%
 		
 	.text-box:hover
 		background-color: rgba(255, 255, 255, .9)
@@ -77,6 +87,9 @@ body
 	.pane1
 		right: 33.333333%
 		+background-image(url("../images/studs.jpg"))
+		
+	#pane1-canvas
+		top: 0px
 		
 	.pane-l
 		left: 0%
@@ -253,11 +266,12 @@ body
 		
 .slide
 	position: absolute
-	top: $pane-height/2
+	top: 38%
 	background-color: rgba(255, 255, 255, .7)
 	width: 80px
 	height: 80px
 	+border-radius(40px)
+	z-index: 40
 	
 	h2
 		margin-top: 16px
