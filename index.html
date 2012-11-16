@@ -72,29 +72,31 @@
 			</div>
 			<div class="pane pane-r">
 				<div class="subpane r-sub-t">
-					<div class="text-box">
-						<p>
-							<h1 class="resource">Stories</h1>
-						</p>
-					</div>
+				</div>
+				<div class="text-box r-text-t">
+					<p>
+						<h1 class="resource">Stories</h1>
+					</p>
 				</div>
 				<div class="subpane r-sub-m">
-					<div class="text-box">
-						<p>
-							<h1 class="resource">Videos</h1>
-						</p>
-					</div>
+				</div>
+				<div class="text-box r-text-m">
+					<p>
+						<h1 class="resource">Videos</h1>
+					</p>
 				</div>
 				<div class="subpane r-sub-b">
-					<div class="text-box">
-						<p>
-							<h1 class="resource">Photos</h1>
-						</p>
-					</div>
+				</div>
+				<div class="text-box r-text-b">
+					<p>
+						<h1 class="resource">Photos</h1>
+					</p>
 				</div>
 				<div class="slide slide-left">
 					<h2>&lt;LLLL</h2>
 				</div>
+				<canvas id="t-pane-r-canvas">
+				</canvas>
 			</div>
 		</div>
 		<div class="pane pane2">
@@ -184,6 +186,56 @@
 			atx.strokeStyle = "rgba(255,255,255,0.6)";
 			atx.stroke();
 			
+			var right=document.getElementById("t-pane-r-canvas")
+			var leftedge;
+			var lat_t;
+			var lat_t_b;
+			var lat_m;
+			var lat_m_t;
+			var lat_m_b;
+			var lat_b;
+			var lat_b_t;
+			var lat_b_b;
+			$(right).each(function(){
+				var pane = $(this).parent();
+				$(".r-text-t", pane).each(function(){
+					leftedge = parseInt($(this).position().left);
+					lat_t = parseInt($(this).position().top) + $(this).outerHeight()/2;
+					lat_t_b = parseInt($(this).position().top) + $(this).outerHeight();
+				});
+				$(".r-text-m", pane).each(function(){
+					lat_m_t = parseInt($(this).position().top);
+					lat_m = parseInt($(this).position().top) + $(this).outerHeight()/2;
+					lat_m_b = parseInt($(this).position().top) + $(this).outerHeight();
+				});
+				$(".r-text-b", pane).each(function(){
+					lat_b_t = parseInt($(this).position().top);
+					lat_b = parseInt($(this).position().top) + $(this).outerHeight()/2;
+					lat_b_b = parseInt($(this).position().top) + $(this).outerHeight();
+				});
+				right.height = pane.height();
+				right.width = pane.width();
+			});
+			var rtx=right.getContext("2d");
+			rtx.lineWidth = 2;
+			rtx.moveTo(0, latitude);
+			rtx.lineTo(leftedge/2, latitude);
+			rtx.moveTo(leftedge/2, lat_t);
+			rtx.lineTo(leftedge/2, lat_b);
+			rtx.moveTo(leftedge/2, lat_t);
+			rtx.lineTo(leftedge, lat_t);
+			rtx.moveTo(leftedge/2, lat_m);
+			rtx.lineTo(leftedge, lat_m);
+			rtx.moveTo(leftedge/2, lat_b);
+			rtx.lineTo(leftedge, lat_b);
+			rtx.moveTo($(window).width()/2, lat_t_b);
+			rtx.lineTo($(window).width()/2, lat_m_t);
+			rtx.moveTo($(window).width()/2, lat_m_b);
+			rtx.lineTo($(window).width()/2, lat_b_t);
+			rtx.moveTo($(window).width()/2, lat_b_b);
+			rtx.lineTo($(window).width()/2, $(window).height());
+			rtx.strokeStyle = "rgba(255,255,255,0.6)";
+			rtx.stroke();
 			
 			var b=document.getElementById("pane2-canvas");
 			var startheight;

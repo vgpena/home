@@ -165,8 +165,8 @@ canvas {
 }
 /* line 126, ../sass/mein.sass */
 .t-pane .pane-r .text-box {
-  width: 20%;
-  top: 209.5px;
+  position: absolute;
+  width: 30%;
 }
 /* line 131, ../sass/mein.sass */
 .t-pane .r-sub-t {
@@ -175,19 +175,31 @@ canvas {
   background-image: url("../images/speak.jpg");
   background-position: 80% 25%;
 }
-/* line 141, ../sass/mein.sass */
+/* line 137, ../sass/mein.sass */
+.t-pane .r-text-t {
+  top: 209.5px;
+}
+/* line 140, ../sass/mein.sass */
 .t-pane .r-sub-m {
   top: 419px;
   right: 0px;
   background-image: url("../images/camera.JPG");
   background-position: 20% 30%;
 }
-/* line 150, ../sass/mein.sass */
+/* line 146, ../sass/mein.sass */
+.t-pane .r-text-m {
+  top: 628.5px;
+}
+/* line 149, ../sass/mein.sass */
 .t-pane .r-sub-b {
   top: 838px;
   right: 0px;
   background-image: url("../images/art.jpg");
   background-position: 20% 30%;
+}
+/* line 155, ../sass/mein.sass */
+.t-pane .r-text-b {
+  top: 1047.5px;
 }
 
 /* line 159, ../sass/mein.sass */
