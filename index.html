@@ -38,22 +38,24 @@
 		<div class="pane t-pane">
 			<div class="pane pane-l">
 				<div class="subpane l-sub-l">
-					<div class="text-box">
-						<p>
-							<h1 class="school">College of Arts &amp; Sciences</h1>
-						</p>
-					</div>
+				</div>
+				<div class="text-box l-text-l">
+					<p>
+						<h1 class="school">College of Arts &amp; Sciences</h1>
+					</p>
 				</div>
 				<div class="subpane l-sub-r">
-					<div class="text-box">
-						<p>
-							<h1 class="school">Conservatory of Music</h1>
-						</p>
-					</div>
+				</div>
+				<div class="text-box l-text-r">
+					<p>
+						<h1 class="school">Conservatory of Music</h1>
+					</p>
 				</div>
 				<div class="slide slide-right">
 					<h2>RRR&gt;</h2>
 				</div>
+				<canvas id="t-pane-l-canvas">
+				</canvas>
 			</div>
 			<div class="pane pane1">
 				<canvas id="pane1-canvas">
@@ -186,7 +188,7 @@
 			atx.strokeStyle = "rgba(255,255,255,0.6)";
 			atx.stroke();
 			
-			var right=document.getElementById("t-pane-r-canvas")
+			var right=document.getElementById("t-pane-r-canvas");
 			var leftedge;
 			var lat_t;
 			var lat_t_b;
@@ -236,6 +238,44 @@
 			rtx.lineTo($(window).width()/2, $(window).height());
 			rtx.strokeStyle = "rgba(255,255,255,0.6)";
 			rtx.stroke();
+			
+			var left=document.getElementById("t-pane-l-canvas");
+			var l_lon_mid;
+			var l_lat_top;
+			var r_lon_mid;
+			var r_lat_top;
+			$(left).each(function(){
+				var pane = $(this).parent();
+				$(".l-text-l", pane).each(function(){
+					l_lon_mid = parseInt($(this).position().left) + $(this).outerWidth()/2;
+					l_lat_top = parseInt($(this).position().top);
+					l_lon_r = parseInt($(this).position().left) + $(this).outerWidth();
+					l_lat_mid = parseInt($(this).position().top + $(this).outerHeight()/2);
+				});
+				$(".l-text-r", pane).each(function(){
+					r_lon_mid = parseInt($(this).position().left) + $(this).outerWidth()/2;
+					r_lat_top = parseInt($(this).position().top);
+					r_lat_b = parseInt($(this).position().top) + $(this).outerHeight();
+				});
+				left.height = pane.height();
+				left.width = pane.width();
+			});
+			var ltx=left.getContext("2d");
+			ltx.lineWidth = 2;
+			ltx.strokeStyle = "rgba(255,255,255,0.6)";
+			ltx.moveTo($(window).width(), latitude);
+			ltx.lineTo(l_lon_mid, latitude);
+			ltx.moveTo(l_lon_mid, latitude);
+			ltx.lineTo(l_lon_mid, l_lat_top);
+			ltx.moveTo(r_lon_mid, latitude);
+			ltx.lineTo(r_lon_mid, r_lat_top);
+			ltx.moveTo(l_lon_r, l_lat_mid);
+			ltx.lineTo($(window).width()/2, l_lat_mid);
+			ltx.moveTo(r_lon_mid, r_lat_b);
+			ltx.lineTo(r_lon_mid, l_lat_mid);
+			ltx.lineTo($(window).width()/2, l_lat_mid);
+			ltx.lineTo($(window).width()/2, $(window).height());
+			ltx.stroke();
 			
 			var b=document.getElementById("pane2-canvas");
 			var startheight;
