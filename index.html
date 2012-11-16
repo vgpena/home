@@ -52,7 +52,7 @@
 					</p>
 				</div>
 				<div class="slide slide-right">
-					<h2>RRR&gt;</h2>
+					<h1>&raquo;</h1>
 				</div>
 				<canvas id="t-pane-l-canvas">
 				</canvas>
@@ -66,10 +66,10 @@
 					</p>
 				</div>
 				<div class="slide slide-left">
-					<h2>&lt;</h2>
+					<h1>&laquo;</h1>
 				</div>
 				<div class="slide slide-right">
-					<h2>&gt;</h2>
+					<h1>&raquo;</h1>
 				</div>
 			</div>
 			<div class="pane pane-r">
@@ -95,7 +95,7 @@
 					</p>
 				</div>
 				<div class="slide slide-left">
-					<h2>&lt;LLLL</h2>
+					<h1>&laquo;</h1>
 				</div>
 				<canvas id="t-pane-r-canvas">
 				</canvas>
@@ -156,7 +156,7 @@
 					What do you want to explore?
 				</h1>
 				<form class="search-form">
-					<input type="text" placeholder="Let's Go!">
+					<input type="text" placeholder="Let's go!">
 				</form>
 			</div>
 		</div>
@@ -165,9 +165,10 @@
 			var startheight,
 				startright,
 				startleft,
-				latitude;
+				latitude,
+				pane;
 			$(a).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".text-box", pane).each(function(){
 					startheight = parseInt($(this).position().top + $(this).outerHeight());
 					startright = parseInt($(this).position().left + $(this).outerWidth());
@@ -177,10 +178,14 @@
 				a.height = pane.height();
 				a.width = pane.width();
 			});
+			var slide_height = $('.slide-left', '.pane1').outerHeight();
+			$('.slide').each(function(){
+				$(this).css('top', latitude - slide_height/2 - 2);
+			});
 			var atx=a.getContext("2d");
 			atx.lineWidth = 2;
 			atx.moveTo($(window).width()/2, startheight);
-			atx.lineTo($(window).width()/2, $(window).height());
+			atx.lineTo($(window).width()/2, pane.height());
 			atx.moveTo(startright, latitude);
 			atx.lineTo($(window).width(), latitude);
 			atx.moveTo(startleft, latitude);
@@ -199,7 +204,7 @@
 			var lat_b_t;
 			var lat_b_b;
 			$(right).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".r-text-t", pane).each(function(){
 					leftedge = parseInt($(this).position().left);
 					lat_t = parseInt($(this).position().top) + $(this).outerHeight()/2;
@@ -235,7 +240,7 @@
 			rtx.moveTo($(window).width()/2, lat_m_b);
 			rtx.lineTo($(window).width()/2, lat_b_t);
 			rtx.moveTo($(window).width()/2, lat_b_b);
-			rtx.lineTo($(window).width()/2, $(window).height());
+			rtx.lineTo($(window).width()/2, pane.height());
 			rtx.strokeStyle = "rgba(255,255,255,0.6)";
 			rtx.stroke();
 			
@@ -245,7 +250,7 @@
 			var r_lon_mid;
 			var r_lat_top;
 			$(left).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".l-text-l", pane).each(function(){
 					l_lon_mid = parseInt($(this).position().left) + $(this).outerWidth()/2;
 					l_lat_top = parseInt($(this).position().top);
@@ -274,14 +279,14 @@
 			ltx.moveTo(r_lon_mid, r_lat_b);
 			ltx.lineTo(r_lon_mid, l_lat_mid);
 			ltx.lineTo($(window).width()/2, l_lat_mid);
-			ltx.lineTo($(window).width()/2, $(window).height());
+			ltx.lineTo($(window).width()/2, pane.height());
 			ltx.stroke();
 			
 			var b=document.getElementById("pane2-canvas");
 			var startheight;
 			var endheight;
 			$(b).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".text-box", pane).each(function(){
 					endheight = parseInt($(this).position().top);
 					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
@@ -295,14 +300,14 @@
 			btx.moveTo($(window).width()/2, 0);
 			btx.lineTo($(window).width()/2, endheight);
 			btx.moveTo($(window).width()/2, startheight);
-			btx.lineTo($(window).width()/2, $(window).height());
+			btx.lineTo($(window).width()/2, pane.height());
 			btx.stroke();
 			
 			var c=document.getElementById("pane3-canvas");
 			var startheight;
 			var endheight;
 			$(c).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".text-box", pane).each(function(){
 					endheight = parseInt($(this).position().top);
 					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
@@ -316,14 +321,14 @@
 			ctx.moveTo($(window).width()/2, 0);
 			ctx.lineTo($(window).width()/2, endheight);
 			ctx.moveTo($(window).width()/2, startheight);
-			ctx.lineTo($(window).width()/2, $(window).height());
+			ctx.lineTo($(window).width()/2, pane.height());
 			ctx.stroke();
 			
 			var d=document.getElementById("pane4-canvas");
 			var startheight;
 			var endheight;
 			$(d).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".text-box", pane).each(function(){
 					endheight = parseInt($(this).position().top);
 					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
@@ -337,14 +342,14 @@
 			dtx.moveTo($(window).width()/2, 0);
 			dtx.lineTo($(window).width()/2, endheight);
 			dtx.moveTo($(window).width()/2, startheight);
-			dtx.lineTo($(window).width()/2, $(window).height());
+			dtx.lineTo($(window).width()/2, pane.height());
 			dtx.stroke();
 			
 			var e=document.getElementById("pane5-canvas");
 			var startheight;
 			var endheight;
 			$(e).each(function(){
-				var pane = $(this).parent();
+				pane = $(this).parent();
 				$(".text-box", pane).each(function(){
 					endheight = parseInt($(this).position().top);
 					startheight = (parseInt($(this).position().top) + $(this).outerHeight());
@@ -358,7 +363,7 @@
 			etx.moveTo($(window).width()/2, 0);
 			etx.lineTo($(window).width()/2, endheight);
 			etx.moveTo($(window).width()/2, startheight);
-			etx.lineTo($(window).width()/2, $(window).height());
+			etx.lineTo($(window).width()/2, pane.height());
 			etx.stroke();
 			
 			var f=document.getElementById("pane6-canvas");
