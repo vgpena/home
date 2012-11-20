@@ -24,6 +24,7 @@
 					if ($this.hasClass("nav-small")){
 						$this.animate({
 							width: "100%",
+							height: "200px",
 						}, "fast",  function(){$this.removeClass("nav-small"); 	$('.mid', el).each(function(){
 								$(this).show();
 							}); $('.nav-search-li', el).show();} );
@@ -35,6 +36,7 @@
 						$this.addClass("nav-small");
 						$this.animate({
 							width: "400px",
+							height: "100px",
 						});
 						$('.mid', el).each(function(){
 							$(this).hide("fast");
