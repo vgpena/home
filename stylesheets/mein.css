@@ -316,24 +316,19 @@ canvas {
 }
 /* line 237, ../sass/mein.sass */
 .navlist .mid {
-  display: inline-block;
-  width: 66.66667%;
-}
-/* line 240, ../sass/mein.sass */
-.navlist .mid ul {
-  width: 100%;
+  width: 50%;
   height: 90px;
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  -ms-column-count: 4;
-  -o-column-count: 4;
-  column-count: 4;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+}
+/* line 242, ../sass/mein.sass */
+.navlist .mid li {
+  width: 100%;
 }
 /* line 245, ../sass/mein.sass */
-.navlist .mid ul li {
-  width: 100%;
-}
-/* line 248, ../sass/mein.sass */
 .navlist .nav-img {
   margin-right: 50px;
   float: right;
@@ -347,17 +342,17 @@ canvas {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 256, ../sass/mein.sass */
+/* line 253, ../sass/mein.sass */
 .navlist .nav-img:hover {
   opacity: 1;
 }
 
-/* line 261, ../sass/mein.sass */
+/* line 258, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
 }
 
-/* line 265, ../sass/mein.sass */
+/* line 262, ../sass/mein.sass */
 .slide {
   position: absolute;
   color: white;
@@ -366,7 +361,7 @@ canvas {
   z-index: 40;
   font-family: "Georgia";
 }
-/* line 273, ../sass/mein.sass */
+/* line 270, ../sass/mein.sass */
 .slide h1 {
   margin-top: 24px;
   margin-left: 22px;
@@ -374,12 +369,22 @@ canvas {
   text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
-/* line 279, ../sass/mein.sass */
+/* line 276, ../sass/mein.sass */
 .slide-left {
   left: 20px;
 }
 
-/* line 282, ../sass/mein.sass */
+/* line 279, ../sass/mein.sass */
 .slide-right {
   right: 20px;
+}
+
+@media all and (max-width: 1200px) {
+  /* line 285, ../sass/mein.sass */
+  .navlist .mid {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+  }
 }

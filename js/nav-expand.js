@@ -15,9 +15,8 @@
 				var $this = $(this);
 				$(this).addClass("nav-small");
 				$(this).width("400px");
-				$('.mid', el).each(function(){
-					$(this).hide();
-				});
+				$('.mid', el).hide();
+				$('.nav-search-li', el).hide();
 				$('.image', $this).each(function(){
 					$(this).width("180px");
 				});
@@ -27,7 +26,7 @@
 							width: "100%",
 						}, "fast",  function(){$this.removeClass("nav-small"); 	$('.mid', el).each(function(){
 								$(this).show();
-							});} );
+							}); $('.nav-search-li', el).show();} );
 						$(".image", $this).each(function(){
 							$(this).width("16.6%");
 						});
@@ -40,6 +39,7 @@
 						$('.mid', el).each(function(){
 							$(this).hide("fast");
 						});
+						$('.nav-search-li', el).hide("fast");
 						$('.image', $this).each(function(){
 							$(this).width("180px");
 						});
