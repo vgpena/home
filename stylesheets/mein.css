@@ -180,34 +180,31 @@ canvas {
 .t-pane .r-sub-t {
   top: 0px;
   right: 0px;
-  background-position: 80% 25%;
 }
-/* line 142, ../sass/mein.sass */
+/* line 141, ../sass/mein.sass */
 .t-pane .r-text-t {
   top: 16.66667%;
 }
-/* line 145, ../sass/mein.sass */
+/* line 144, ../sass/mein.sass */
 .t-pane .r-sub-m {
   top: 33.33333%;
   right: 0px;
-  background-position: 20% 30%;
 }
-/* line 150, ../sass/mein.sass */
+/* line 148, ../sass/mein.sass */
 .t-pane .r-text-m {
   top: 50%;
 }
-/* line 153, ../sass/mein.sass */
+/* line 151, ../sass/mein.sass */
 .t-pane .r-sub-b {
   top: 66.66667%;
   right: 0px;
-  background-position: 20% 30%;
 }
-/* line 158, ../sass/mein.sass */
+/* line 155, ../sass/mein.sass */
 .t-pane .r-text-b {
   top: 83.33333%;
 }
 
-/* line 162, ../sass/mein.sass */
+/* line 159, ../sass/mein.sass */
 .school, .resource {
   text-align: center;
   font-family: "Georgia";
@@ -216,7 +213,7 @@ canvas {
   color: #222222;
 }
 
-/* line 169, ../sass/mein.sass */
+/* line 166, ../sass/mein.sass */
 .subpane {
   position: absolute;
   width: 50%;
@@ -228,41 +225,41 @@ canvas {
   background-size: cover;
 }
 
-/* line 176, ../sass/mein.sass */
+/* line 173, ../sass/mein.sass */
 .subpane1 {
   top: 0px;
   left: 50%;
 }
 
-/* line 180, ../sass/mein.sass */
+/* line 177, ../sass/mein.sass */
 .subpane2 {
   top: 0px;
   left: 0px;
 }
 
-/* line 184, ../sass/mein.sass */
+/* line 181, ../sass/mein.sass */
 .subpane3 {
   top: 50%;
   left: 0px;
 }
 
-/* line 188, ../sass/mein.sass */
+/* line 185, ../sass/mein.sass */
 .subpane4 {
   top: 50%;
   left: 50%;
 }
 
-/* line 192, ../sass/mein.sass */
+/* line 189, ../sass/mein.sass */
 .search {
   text-align: center;
 }
 
-/* line 195, ../sass/mein.sass */
+/* line 192, ../sass/mein.sass */
 .search-form {
   width: 90%;
   margin: auto;
 }
-/* line 199, ../sass/mein.sass */
+/* line 196, ../sass/mein.sass */
 .search-form input {
   width: 90%;
   margin: 20px 3%;
@@ -271,7 +268,7 @@ canvas {
   line-height: 30px;
 }
 
-/* line 206, ../sass/mein.sass */
+/* line 203, ../sass/mein.sass */
 .topnav {
   position: fixed;
   top: 0px;
@@ -282,7 +279,7 @@ canvas {
   width: 100%;
 }
 
-/* line 215, ../sass/mein.sass */
+/* line 212, ../sass/mein.sass */
 .nav-small {
   -moz-border-radius-topright: 70px;
   -webkit-border-top-right-radius: 70px;
@@ -291,17 +288,17 @@ canvas {
   -webkit-border-bottom-right-radius: 70px;
   border-bottom-right-radius: 70px;
 }
-/* line 220, ../sass/mein.sass */
+/* line 217, ../sass/mein.sass */
 .nav-small .navlist .nav-img {
   margin-right: 30px;
 }
 
-/* line 223, ../sass/mein.sass */
+/* line 220, ../sass/mein.sass */
 .logo {
   margin-top: 20px;
 }
 
-/* line 226, ../sass/mein.sass */
+/* line 223, ../sass/mein.sass */
 .navlist {
   position: relative;
   display: inline;
@@ -310,19 +307,19 @@ canvas {
   font-family: "Georgia";
   font-size: 18px;
 }
-/* line 234, ../sass/mein.sass */
+/* line 231, ../sass/mein.sass */
 .navlist li {
   float: left;
   display: inline-block;
   width: 16.66667%;
   line-height: 30px;
 }
-/* line 240, ../sass/mein.sass */
+/* line 237, ../sass/mein.sass */
 .navlist .mid {
   display: inline-block;
   width: 66.66667%;
 }
-/* line 243, ../sass/mein.sass */
+/* line 240, ../sass/mein.sass */
 .navlist .mid ul {
   width: 100%;
   height: 90px;
@@ -332,11 +329,11 @@ canvas {
   -o-column-count: 4;
   column-count: 4;
 }
-/* line 248, ../sass/mein.sass */
+/* line 245, ../sass/mein.sass */
 .navlist .mid ul li {
   width: 100%;
 }
-/* line 251, ../sass/mein.sass */
+/* line 248, ../sass/mein.sass */
 .navlist .nav-img {
   margin-right: 50px;
   float: right;
@@ -350,17 +347,17 @@ canvas {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 259, ../sass/mein.sass */
+/* line 256, ../sass/mein.sass */
 .navlist .nav-img:hover {
   opacity: 1;
 }
 
-/* line 264, ../sass/mein.sass */
+/* line 261, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
 }
 
-/* line 268, ../sass/mein.sass */
+/* line 265, ../sass/mein.sass */
 .slide {
   position: absolute;
   color: white;
@@ -369,7 +366,7 @@ canvas {
   z-index: 40;
   font-family: "Georgia";
 }
-/* line 276, ../sass/mein.sass */
+/* line 273, ../sass/mein.sass */
 .slide h1 {
   margin-top: 24px;
   margin-left: 22px;
@@ -377,12 +374,12 @@ canvas {
   text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
-/* line 282, ../sass/mein.sass */
+/* line 279, ../sass/mein.sass */
 .slide-left {
   left: 20px;
 }
 
-/* line 285, ../sass/mein.sass */
+/* line 282, ../sass/mein.sass */
 .slide-right {
   right: 20px;
 }
