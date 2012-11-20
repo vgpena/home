@@ -1,0 +1,69 @@
+/* line 3, ../sass/5.sass */
+.pane1 {
+  background-image: url("../images/5/studs.jpg");
+}
+
+/* line 6, ../sass/5.sass */
+.pane2 {
+  background-image: url("../images/5/finney.JPG");
+}
+
+/* line 9, ../sass/5.sass */
+.pane3 {
+  background-image: url("../images/5/lion-dance.JPG");
+}
+
+/* line 12, ../sass/5.sass */
+.pane4 {
+  background-image: url("../images/5/sciency-thing-2.jpg");
+}
+
+/* line 15, ../sass/5.sass */
+.pane5 {
+  background-image: url("../images/5/green.jpg");
+}
+
+/* line 18, ../sass/5.sass */
+.l-sub-l {
+  background-image: url("../images/5/sciencey-thing-3.jpg");
+}
+
+/* line 21, ../sass/5.sass */
+.l-sub-r {
+  background-image: url("../images/5/ensemble.jpg");
+}
+
+/* line 24, ../sass/5.sass */
+.r-sub-t {
+  background-image: url("../images/5/speak.jpg");
+}
+
+/* line 27, ../sass/5.sass */
+.r-sub-m {
+  background-image: url("../images/5/camera.JPG");
+}
+
+/* line 30, ../sass/5.sass */
+.r-sub-b {
+  background-image: url("../images/5/art.jpg");
+}
+
+/* line 33, ../sass/5.sass */
+.subpane1 {
+  background-image: url("../images/5/bike-co-op.jpg");
+}
+
+/* line 36, ../sass/5.sass */
+.subpane2 {
+  background-image: url("../images/5/selk.JPG");
+}
+
+/* line 39, ../sass/5.sass */
+.subpane3 {
+  background-image: url("../images/5/dance.jpg");
+}
+
+/* line 42, ../sass/5.sass */
+.subpane4 {
+  background-image: url("../images/5/sciencey-thing.JPG");
+}

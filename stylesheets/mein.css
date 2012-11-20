@@ -60,37 +60,33 @@ canvas {
 /* line 52, ../sass/mein.sass */
 .pane2 {
   top: 100%;
-  background-image: url("../images/finney.JPG");
 }
 
-/* line 56, ../sass/mein.sass */
+/* line 55, ../sass/mein.sass */
 .pane3 {
   top: 200%;
-  background-image: url("../images/lion-dance.JPG");
 }
 
-/* line 60, ../sass/mein.sass */
+/* line 58, ../sass/mein.sass */
 .pane4 {
   top: 300%;
-  background-image: url("../images/sciency-thing-2.jpg");
+}
+
+/* line 61, ../sass/mein.sass */
+.pane5 {
+  top: 400%;
 }
 
 /* line 64, ../sass/mein.sass */
-.pane5 {
-  top: 400%;
-  background-image: url("../images/green.jpg");
-}
-
-/* line 68, ../sass/mein.sass */
 .pane6 {
   top: 500%;
 }
 
-/* line 71, ../sass/mein.sass */
+/* line 67, ../sass/mein.sass */
 .invisipane {
   top: 500%;
 }
-/* line 74, ../sass/mein.sass */
+/* line 70, ../sass/mein.sass */
 .invisipane .text-box {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition-property: background-color;
@@ -103,12 +99,12 @@ canvas {
   transition-duration: 1s;
   top: 42%;
 }
-/* line 80, ../sass/mein.sass */
+/* line 76, ../sass/mein.sass */
 .invisipane .text-box:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 83, ../sass/mein.sass */
+/* line 79, ../sass/mein.sass */
 .top-pane {
   width: 100%;
   height: 100%;
@@ -116,108 +112,102 @@ canvas {
   overflow-x: hidden;
 }
 
-/* line 90, ../sass/mein.sass */
+/* line 86, ../sass/mein.sass */
 .t-pane {
   width: 300%;
   left: -100%;
 }
-/* line 94, ../sass/mein.sass */
+/* line 90, ../sass/mein.sass */
 .t-pane .pane {
   width: 33.33333%;
   display: inline;
 }
-/* line 98, ../sass/mein.sass */
+/* line 94, ../sass/mein.sass */
 .t-pane .pane1 {
   right: 33.33333%;
-  background-image: url("../images/studs.jpg");
 }
-/* line 102, ../sass/mein.sass */
+/* line 97, ../sass/mein.sass */
 .t-pane #pane1-canvas {
   top: 0px;
 }
-/* line 105, ../sass/mein.sass */
+/* line 100, ../sass/mein.sass */
 .t-pane .pane-l {
   left: 0%;
 }
-/* line 108, ../sass/mein.sass */
+/* line 103, ../sass/mein.sass */
 .t-pane .pane-l .subpane {
   height: 100%;
 }
-/* line 111, ../sass/mein.sass */
+/* line 106, ../sass/mein.sass */
 .t-pane .pane-l .text-box {
   width: 30%;
 }
-/* line 114, ../sass/mein.sass */
+/* line 109, ../sass/mein.sass */
 .t-pane .l-sub-l {
   top: 0px;
   left: 0%;
-  background-image: url("../images/sciencey-thing-3.jpg");
 }
-/* line 119, ../sass/mein.sass */
+/* line 113, ../sass/mein.sass */
 .t-pane .l-text-l {
   top: 80%;
   left: 10%;
 }
-/* line 123, ../sass/mein.sass */
+/* line 117, ../sass/mein.sass */
 .t-pane .l-sub-r {
   top: 0px;
   left: 50%;
-  background-image: url("../images/ensemble.jpg");
 }
-/* line 128, ../sass/mein.sass */
+/* line 121, ../sass/mein.sass */
 .t-pane .l-text-r {
   top: 60%;
   left: 60%;
 }
-/* line 132, ../sass/mein.sass */
+/* line 125, ../sass/mein.sass */
 .t-pane .pane-r {
   right: 0%;
 }
-/* line 135, ../sass/mein.sass */
+/* line 128, ../sass/mein.sass */
 .t-pane .pane-r .subpane {
   width: 100%;
   height: 33.33333%;
 }
-/* line 139, ../sass/mein.sass */
+/* line 132, ../sass/mein.sass */
 .t-pane .pane-r .text-box {
   position: absolute;
   width: 30%;
 }
-/* line 144, ../sass/mein.sass */
+/* line 137, ../sass/mein.sass */
 .t-pane .r-sub-t {
   top: 0px;
   right: 0px;
-  background-image: url("../images/speak.jpg");
   background-position: 80% 25%;
 }
-/* line 150, ../sass/mein.sass */
+/* line 142, ../sass/mein.sass */
 .t-pane .r-text-t {
   top: 16.66667%;
 }
-/* line 153, ../sass/mein.sass */
+/* line 145, ../sass/mein.sass */
 .t-pane .r-sub-m {
   top: 33.33333%;
   right: 0px;
-  background-image: url("../images/camera.JPG");
   background-position: 20% 30%;
 }
-/* line 159, ../sass/mein.sass */
+/* line 150, ../sass/mein.sass */
 .t-pane .r-text-m {
   top: 50%;
 }
-/* line 162, ../sass/mein.sass */
+/* line 153, ../sass/mein.sass */
 .t-pane .r-sub-b {
   top: 66.66667%;
   right: 0px;
-  background-image: url("../images/art.jpg");
   background-position: 20% 30%;
 }
-/* line 168, ../sass/mein.sass */
+/* line 158, ../sass/mein.sass */
 .t-pane .r-text-b {
   top: 83.33333%;
 }
 
-/* line 172, ../sass/mein.sass */
+/* line 162, ../sass/mein.sass */
 .school, .resource {
   text-align: center;
   font-family: "Georgia";
@@ -226,7 +216,7 @@ canvas {
   color: #222222;
 }
 
-/* line 179, ../sass/mein.sass */
+/* line 169, ../sass/mein.sass */
 .subpane {
   position: absolute;
   width: 50%;
@@ -238,45 +228,41 @@ canvas {
   background-size: cover;
 }
 
-/* line 186, ../sass/mein.sass */
+/* line 176, ../sass/mein.sass */
 .subpane1 {
   top: 0px;
   left: 50%;
-  background-image: url("../images/bike-co-op.jpg");
 }
 
-/* line 191, ../sass/mein.sass */
+/* line 180, ../sass/mein.sass */
 .subpane2 {
   top: 0px;
   left: 0px;
-  background-image: url("../images/selk.JPG");
 }
 
-/* line 196, ../sass/mein.sass */
+/* line 184, ../sass/mein.sass */
 .subpane3 {
   top: 50%;
   left: 0px;
-  background-image: url("../images/dance.jpg");
 }
 
-/* line 201, ../sass/mein.sass */
+/* line 188, ../sass/mein.sass */
 .subpane4 {
   top: 50%;
   left: 50%;
-  background-image: url("../images/sciencey-thing.JPG");
 }
 
-/* line 206, ../sass/mein.sass */
+/* line 192, ../sass/mein.sass */
 .search {
   text-align: center;
 }
 
-/* line 209, ../sass/mein.sass */
+/* line 195, ../sass/mein.sass */
 .search-form {
   width: 90%;
   margin: auto;
 }
-/* line 213, ../sass/mein.sass */
+/* line 199, ../sass/mein.sass */
 .search-form input {
   width: 90%;
   margin: 20px 3%;
@@ -285,7 +271,7 @@ canvas {
   line-height: 30px;
 }
 
-/* line 220, ../sass/mein.sass */
+/* line 206, ../sass/mein.sass */
 .topnav {
   position: fixed;
   top: 0px;
@@ -296,7 +282,7 @@ canvas {
   width: 100%;
 }
 
-/* line 229, ../sass/mein.sass */
+/* line 215, ../sass/mein.sass */
 .nav-small {
   -moz-border-radius-topright: 70px;
   -webkit-border-top-right-radius: 70px;
@@ -305,17 +291,17 @@ canvas {
   -webkit-border-bottom-right-radius: 70px;
   border-bottom-right-radius: 70px;
 }
-/* line 234, ../sass/mein.sass */
+/* line 220, ../sass/mein.sass */
 .nav-small .navlist .nav-img {
   margin-right: 30px;
 }
 
-/* line 237, ../sass/mein.sass */
+/* line 223, ../sass/mein.sass */
 .logo {
   margin-top: 20px;
 }
 
-/* line 240, ../sass/mein.sass */
+/* line 226, ../sass/mein.sass */
 .navlist {
   position: relative;
   display: inline;
@@ -324,19 +310,19 @@ canvas {
   font-family: "Georgia";
   font-size: 18px;
 }
-/* line 248, ../sass/mein.sass */
+/* line 234, ../sass/mein.sass */
 .navlist li {
   float: left;
   display: inline-block;
   width: 16.66667%;
   line-height: 30px;
 }
-/* line 254, ../sass/mein.sass */
+/* line 240, ../sass/mein.sass */
 .navlist .mid {
   display: inline-block;
   width: 66.66667%;
 }
-/* line 257, ../sass/mein.sass */
+/* line 243, ../sass/mein.sass */
 .navlist .mid ul {
   width: 100%;
   height: 90px;
@@ -346,11 +332,11 @@ canvas {
   -o-column-count: 4;
   column-count: 4;
 }
-/* line 262, ../sass/mein.sass */
+/* line 248, ../sass/mein.sass */
 .navlist .mid ul li {
   width: 100%;
 }
-/* line 265, ../sass/mein.sass */
+/* line 251, ../sass/mein.sass */
 .navlist .nav-img {
   margin-right: 50px;
   float: right;
@@ -364,17 +350,17 @@ canvas {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 273, ../sass/mein.sass */
+/* line 259, ../sass/mein.sass */
 .navlist .nav-img:hover {
   opacity: 1;
 }
 
-/* line 278, ../sass/mein.sass */
+/* line 264, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
 }
 
-/* line 282, ../sass/mein.sass */
+/* line 268, ../sass/mein.sass */
 .slide {
   position: absolute;
   color: white;
@@ -383,7 +369,7 @@ canvas {
   z-index: 40;
   font-family: "Georgia";
 }
-/* line 290, ../sass/mein.sass */
+/* line 276, ../sass/mein.sass */
 .slide h1 {
   margin-top: 24px;
   margin-left: 22px;
@@ -391,12 +377,12 @@ canvas {
   text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
-/* line 296, ../sass/mein.sass */
+/* line 282, ../sass/mein.sass */
 .slide-left {
   left: 20px;
 }
 
-/* line 299, ../sass/mein.sass */
+/* line 285, ../sass/mein.sass */
 .slide-right {
   right: 20px;
 }
