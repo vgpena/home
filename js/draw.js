@@ -53,10 +53,10 @@ function draw (){
 	atx.lineWidth = line_width;
 	atx.strokeStyle = stroke_style;
 	
-	atx.moveTo($(window).width()/2, startheight);
-	atx.lineTo($(window).width()/2, pane.height());
+	atx.moveTo(a.width/2, startheight);
+	atx.lineTo(a.width/2, pane.height());
 	atx.moveTo(startright, latitude);
-	atx.lineTo($(window).width(), latitude);
+	atx.lineTo(a.width, latitude);
 	atx.moveTo(startleft, latitude);
 	atx.lineTo(0, latitude);
 	
@@ -100,12 +100,12 @@ function draw (){
 	rtx.moveTo(leftedge/2, lat_m);
 	rtx.lineTo(leftedge, lat_m);
 	rtx.moveTo(leftedge/2, lat_b);
-	rtx.moveTo($(window).width()/2, lat_t_b);
-	rtx.lineTo($(window).width()/2, lat_m_t);
-	rtx.moveTo($(window).width()/2, lat_m_b);
-	rtx.lineTo($(window).width()/2, lat_b_t);
-	rtx.moveTo($(window).width()/2, lat_b_b);
-	rtx.lineTo($(window).width()/2, pane.height());
+	rtx.moveTo(right.width/2, lat_t_b);
+	rtx.lineTo(right.width/2, lat_m_t);
+	rtx.moveTo(right.width/2, lat_m_b);
+	rtx.lineTo(right.width/2, lat_b_t);
+	rtx.moveTo(right.width/2, lat_b_b);
+	rtx.lineTo(right.width/2, right.height);
 	
 	rtx.stroke();
 
@@ -133,17 +133,17 @@ function draw (){
 	ltx.lineWidth = line_width;
 	ltx.strokeStyle = stroke_style;
 	
-	ltx.moveTo($(window).width(), latitude);
+	ltx.moveTo(left.width, latitude);
 	ltx.lineTo(l_lon_mid, latitude);
 	ltx.lineTo(l_lon_mid, l_lat_top);
 	ltx.moveTo(r_lon_mid, latitude);
 	ltx.lineTo(r_lon_mid, r_lat_top);
 	ltx.moveTo(l_lon_r, l_lat_mid);
-	ltx.lineTo($(window).width()/2, l_lat_mid);
+	ltx.lineTo(left.width/2, l_lat_mid);
 	ltx.moveTo(r_lon_mid, r_lat_b);
 	ltx.lineTo(r_lon_mid, l_lat_mid);
-	ltx.lineTo($(window).width()/2, l_lat_mid);
-	ltx.lineTo($(window).width()/2, pane.height());
+	ltx.lineTo(left.width/2, l_lat_mid);
+	ltx.lineTo(left.width/2, left.height);
 	
 	ltx.stroke();
 	
@@ -163,10 +163,10 @@ function draw (){
 	btx.lineWidth = line_width;
 	btx.strokeStyle = stroke_style;
 	
-	btx.moveTo($(window).width()/2, 0);
-	btx.lineTo($(window).width()/2, endheight);
-	btx.moveTo($(window).width()/2, startheight);
-	btx.lineTo($(window).width()/2, pane.height());
+	btx.moveTo(b.width/2, 0);
+	btx.lineTo(b.width/2, endheight);
+	btx.moveTo(b.width/2, startheight);
+	btx.lineTo(b.width/2, b.height);
 	
 	btx.stroke();
 	
@@ -187,10 +187,10 @@ function draw (){
 	ctx.lineWidth = line_width;
 	
 	ctx.strokeStyle = stroke_style;
-	ctx.moveTo($(window).width()/2, 0);
-	ctx.lineTo($(window).width()/2, endheight);
-	ctx.moveTo($(window).width()/2, startheight);
-	ctx.lineTo($(window).width()/2, pane.height());
+	ctx.moveTo(c.width/2, 0);
+	ctx.lineTo(c.width/2, endheight);
+	ctx.moveTo(c.width/2, startheight);
+	ctx.lineTo(c.width/2, c.height);
 	
 	ctx.stroke();
 	
@@ -211,10 +211,10 @@ function draw (){
 	dtx.lineWidth = line_width;
 	dtx.strokeStyle = stroke_style;
 	
-	dtx.moveTo($(window).width()/2, 0);
-	dtx.lineTo($(window).width()/2, endheight);
-	dtx.moveTo($(window).width()/2, startheight);
-	dtx.lineTo($(window).width()/2, pane.height());
+	dtx.moveTo(d.width/2, 0);
+	dtx.lineTo(d.width/2, endheight);
+	dtx.moveTo(d.width/2, startheight);
+	dtx.lineTo(d.width/2, d.height);
 	
 	dtx.stroke();
 	
@@ -235,10 +235,10 @@ function draw (){
 	etx.lineWidth = line_width;
 	etx.strokeStyle = stroke_style;
 	
-	etx.moveTo($(window).width()/2, 0);
-	etx.lineTo($(window).width()/2, endheight);
-	etx.moveTo($(window).width()/2, startheight);
-	etx.lineTo($(window).width()/2, pane.height());
+	etx.moveTo(e.width/2, 0);
+	etx.lineTo(e.width/2, endheight);
+	etx.moveTo(e.width/2, startheight);
+	etx.lineTo(e.width/2, e.height);
 	
 	etx.stroke();
 	
@@ -258,8 +258,8 @@ function draw (){
 	ftx.lineWidth = line_width;
 	ftx.strokeStyle = stroke_style;
 	
-	ftx.moveTo($(window).width()/2, 0);
-	ftx.lineTo($(window).width()/2, endheight);
+	ftx.moveTo(f.width/2, 0);
+	ftx.lineTo(f.width/2, endheight);
 	
 	ftx.stroke();
 }
