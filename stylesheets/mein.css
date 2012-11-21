@@ -330,8 +330,9 @@ canvas {
 }
 /* line 245, ../sass/mein.sass */
 .navlist .nav-img {
-  margin-right: 50px;
-  float: right;
+  position: absolute;
+  top: -14px;
+  left: 70%;
   opacity: 0.9;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -342,17 +343,17 @@ canvas {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 253, ../sass/mein.sass */
+/* line 256, ../sass/mein.sass */
 .navlist .nav-img:hover {
   opacity: 1;
 }
 
-/* line 258, ../sass/mein.sass */
+/* line 261, ../sass/mein.sass */
 .nav-search input {
   line-height: 30px;
 }
 
-/* line 262, ../sass/mein.sass */
+/* line 265, ../sass/mein.sass */
 .slide {
   position: absolute;
   color: white;
@@ -361,7 +362,7 @@ canvas {
   z-index: 40;
   font-family: "Georgia";
 }
-/* line 270, ../sass/mein.sass */
+/* line 273, ../sass/mein.sass */
 .slide h1 {
   margin-top: 24px;
   margin-left: 22px;
@@ -369,53 +370,53 @@ canvas {
   text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
-/* line 276, ../sass/mein.sass */
+/* line 279, ../sass/mein.sass */
 .slide-left {
   left: 20px;
 }
 
-/* line 279, ../sass/mein.sass */
+/* line 282, ../sass/mein.sass */
 .slide-right {
   right: 20px;
 }
 
 @media all and (max-width: 1500px) {
-  /* line 285, ../sass/mein.sass */
+  /* line 288, ../sass/mein.sass */
   .navlist .mid {
     position: absolute;
     top: 100px;
     left: 0px;
     width: 100%;
   }
-  /* line 291, ../sass/mein.sass */
+  /* line 294, ../sass/mein.sass */
   .navlist .nav-search-li {
     position: absolute;
     left: 33%;
     margin-left: 20px;
   }
-  /* line 296, ../sass/mein.sass */
+  /* line 299, ../sass/mein.sass */
   .navlist .nav-img {
     position: absolute;
-    top: -9px;
+    top: -14px;
     left: 70%;
   }
 
-  /* line 301, ../sass/mein.sass */
+  /* line 304, ../sass/mein.sass */
   .school, .resource {
     font-size: 40px;
     line-height: 46px;
   }
 
-  /* line 307, ../sass/mein.sass */
+  /* line 310, ../sass/mein.sass */
   .t-pane .pane-l .text-box {
     width: 40%;
   }
-  /* line 310, ../sass/mein.sass */
+  /* line 313, ../sass/mein.sass */
   .t-pane .l-text-r {
     top: 60%;
     left: 53%;
   }
-  /* line 314, ../sass/mein.sass */
+  /* line 317, ../sass/mein.sass */
   .t-pane .l-text-l {
     top: 75%;
     left: 3%;
