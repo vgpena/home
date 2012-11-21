@@ -38,7 +38,7 @@ canvas
 	top: 34%
 	width: 30%
 	left: 35%
-	background-color: rgba(255, 255, 255, 0.6)
+	background-color: rgba(255, 255, 255, 0.7)
 	padding: 20px
 	+border-radius(20px)
 	z-index: 40
@@ -72,6 +72,7 @@ canvas
 		+transition-property(background-color)
 		+transition-duration(1s)
 		top: 42%
+		margin-left: -20px
 		
 	.text-box:hover
 		background-color: rgba(255, 255, 255, .9)
@@ -93,6 +94,7 @@ canvas
 		
 	.pane1
 		right: 33.333333%
+		background-position: center
 		
 	#pane1-canvas
 		top: 0px
@@ -188,6 +190,7 @@ canvas
 	
 .search
 	text-align: center
+	line-height: 50px
 	
 .search-form
 	width: 90%
@@ -323,7 +326,6 @@ canvas
 		
 		.l-text-r
 			top: $pane-height*(3/5)
-			margin-left: -20px
 			left: 60%
 	
 		.l-text-l
@@ -345,8 +347,28 @@ canvas
 		top: 25%
 		width: 50%
 		left: 25%
+
+	.school
+		font-size: 32px
+		line-height: 38px
+	
+	.t-pane
+		.l-text-r
+			top: $pane-height*(8/15)
+			left: 60%
+
+		.l-text-l
+			top: $pane-height*(7/10)
+			margin-left: -20px
+			left: 10%
 		
 @media all and (max-width: 600px)
+
+	.t-pane
+		.l-text-r
+			top: $pane-height*(3/5)
+			left: 60%
+			
 	.invisipane
 		.text-box
 			top: 30%
