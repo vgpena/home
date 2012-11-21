@@ -248,10 +248,10 @@ canvas
 		left: 70%
 		//margin-right: 50px
 		//float: right
-		opacity: .9
+		opacity: .8
 		
 		+transition-property(opacity)
-		+transition-duration(1s)
+		+transition-duration(0.5s)
 		
 	.nav-img:hover
 		opacity: 1
@@ -285,6 +285,8 @@ canvas
 @media all and (max-width: 1500px)
 		
 	.navlist
+		li
+			width: 26%
 		.mid
 			position: absolute
 			top: 100px
@@ -310,6 +312,10 @@ canvas
 		width: 40%
 		left: 30%
 		
+	.invisipane
+		.text-box
+			top: 34%
+		
 	.t-pane
 		.pane-r
 			.text-box
@@ -333,3 +339,14 @@ canvas
 
 		.r-text-b
 			top: $pane-height*(7/9)
+			
+@media all and (max-width: 1000px)
+	.text-box
+		top: 25%
+		width: 50%
+		left: 25%
+		
+@media all and (max-width: 600px)
+	.invisipane
+		.text-box
+			top: 30%

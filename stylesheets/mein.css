@@ -333,15 +333,15 @@ canvas {
   position: absolute;
   top: -14px;
   left: 70%;
-  opacity: 0.9;
+  opacity: 0.8;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 /* line 256, ../sass/mein.sass */
 .navlist .nav-img:hover {
@@ -382,64 +382,87 @@ canvas {
 
 @media all and (max-width: 1500px) {
   /* line 288, ../sass/mein.sass */
+  .navlist li {
+    width: 26%;
+  }
+  /* line 290, ../sass/mein.sass */
   .navlist .mid {
     position: absolute;
     top: 100px;
     left: 0px;
     width: 100%;
   }
-  /* line 294, ../sass/mein.sass */
+  /* line 296, ../sass/mein.sass */
   .navlist .nav-search-li {
     position: absolute;
     left: 33%;
     margin-left: 20px;
   }
-  /* line 299, ../sass/mein.sass */
+  /* line 301, ../sass/mein.sass */
   .navlist .nav-img {
     position: absolute;
     top: -14px;
     left: 70%;
   }
 
-  /* line 304, ../sass/mein.sass */
+  /* line 306, ../sass/mein.sass */
   .school, .resource {
     font-size: 40px;
     line-height: 46px;
   }
 
-  /* line 308, ../sass/mein.sass */
+  /* line 310, ../sass/mein.sass */
   .text-box {
     top: 30%;
     width: 40%;
     left: 30%;
   }
 
-  /* line 315, ../sass/mein.sass */
+  /* line 316, ../sass/mein.sass */
+  .invisipane .text-box {
+    top: 34%;
+  }
+
+  /* line 321, ../sass/mein.sass */
   .t-pane .pane-r .text-box {
     left: 35%;
   }
-  /* line 318, ../sass/mein.sass */
+  /* line 324, ../sass/mein.sass */
   .t-pane .l-text-r {
     top: 60%;
     margin-left: -20px;
     left: 60%;
   }
-  /* line 323, ../sass/mein.sass */
+  /* line 329, ../sass/mein.sass */
   .t-pane .l-text-l {
     top: 75%;
     margin-left: -20px;
     left: 10%;
   }
-  /* line 328, ../sass/mein.sass */
+  /* line 334, ../sass/mein.sass */
   .t-pane .r-text-t {
     top: 11.11111%;
   }
-  /* line 331, ../sass/mein.sass */
+  /* line 337, ../sass/mein.sass */
   .t-pane .r-text-m {
     top: 44.44444%;
   }
-  /* line 334, ../sass/mein.sass */
+  /* line 340, ../sass/mein.sass */
   .t-pane .r-text-b {
     top: 77.77778%;
+  }
+}
+@media all and (max-width: 1000px) {
+  /* line 344, ../sass/mein.sass */
+  .text-box {
+    top: 25%;
+    width: 50%;
+    left: 25%;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 351, ../sass/mein.sass */
+  .invisipane .text-box {
+    top: 30%;
   }
 }
