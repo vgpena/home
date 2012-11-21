@@ -421,4 +421,16 @@ canvas {
     top: 75%;
     left: 3%;
   }
+  /* line 321, ../sass/mein.sass */
+  .t-pane .r-text-t {
+    top: 11.11111%;
+  }
+  /* line 324, ../sass/mein.sass */
+  .t-pane .r-text-m {
+    top: 44.44444%;
+  }
+  /* line 327, ../sass/mein.sass */
+  .t-pane .r-text-b {
+    top: 77.77778%;
+  }
 }
