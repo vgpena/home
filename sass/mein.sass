@@ -38,7 +38,10 @@ canvas
 	top: 34%
 	width: 30%
 	left: 35%
+	margin-left: -20px
 	background-color: rgba(255, 255, 255, 0.7)
+	+transition-property(background-color)
+	+transition-duration(0.5s)
 	padding: 20px
 	+border-radius(20px)
 	z-index: 40
@@ -48,6 +51,14 @@ canvas
 		margin: 0px
 		font-size: 20px
 		line-height: 30px
+	
+	.attn
+		color: #222
+		+text-shadow(rgba(0, 0, 0, 0.1) 0px 0px 1px)
+		font-style: normal
+		
+.text-box:hover
+	background-color: rgba(255, 255, 255, 0.8)
 	
 .pane2
 	top: $pane-height
@@ -72,14 +83,14 @@ canvas
 	top: $pane-height*5
 	
 	.text-box
-		background-color: rgba(255, 255, 255, .8)
+		background-color: rgba(255, 255, 255, 0.8)
 		+transition-property(background-color)
 		+transition-duration(1s)
 		top: 42%
 		margin-left: -20px
 		
 	.text-box:hover
-		background-color: rgba(255, 255, 255, .9)
+		background-color: rgba(255, 255, 255, 0.9)
 
 .top-pane
 	width: 100%

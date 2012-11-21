@@ -38,7 +38,7 @@ function draw (){
 	//PLACE TEXTBOX
 	$(".text-box", pane).each(function(){
 		startheight = parseInt($(this).position().top + $(this).outerHeight());
-		startright = parseInt($(this).position().left + $(this).outerWidth());
+		startright = parseInt($(this).position().left + $(this).outerWidth())+ parseInt($(this).css("margin-left"));
 		startleft = parseInt($(this).position().left);
 		latitude = parseInt($(this).position().top + $(this).outerHeight()/2);
 	});
@@ -70,7 +70,7 @@ function draw (){
 	
 	//SET TEXT BOXES
 	$(".r-text-t", pane).each(function(){
-		leftedge = parseInt($(this).position().left);
+		leftedge = parseInt($(this).position().left) + parseInt($(this).css("margin-left"));
 		lat_t = parseInt($(this).position().top) + $(this).outerHeight()/2;
 		lat_t_b = parseInt($(this).position().top) + $(this).outerHeight();
 	});
