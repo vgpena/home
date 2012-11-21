@@ -399,4 +399,25 @@ canvas {
     top: -9px;
     left: 70%;
   }
+
+  /* line 301, ../sass/mein.sass */
+  .school, .resource {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  /* line 307, ../sass/mein.sass */
+  .t-pane .pane-l .text-box {
+    width: 40%;
+  }
+  /* line 310, ../sass/mein.sass */
+  .t-pane .l-text-r {
+    top: 60%;
+    left: 53%;
+  }
+  /* line 314, ../sass/mein.sass */
+  .t-pane .l-text-l {
+    top: 75%;
+    left: 3%;
+  }
 }
