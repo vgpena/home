@@ -119,7 +119,7 @@ function draw (){
 	$(".l-text-l", pane).each(function(){
 		l_lon_mid = parseInt($(this).position().left) + $(this).outerWidth()/2;
 		l_lat_top = parseInt($(this).position().top);
-		l_lon_r = parseInt($(this).position().left) + $(this).outerWidth();
+		l_lon_r = parseInt($(this).position().left) + $(this).outerWidth() + parseInt($(this).css("margin-left"));
 		l_lat_mid = parseInt($(this).position().top + $(this).outerHeight()/2);
 	});
 	$(".l-text-r", pane).each(function(){

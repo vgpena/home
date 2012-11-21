@@ -407,29 +407,38 @@ canvas {
     line-height: 46px;
   }
 
-  /* line 310, ../sass/mein.sass */
-  .t-pane .pane-l .text-box {
+  /* line 308, ../sass/mein.sass */
+  .text-box {
+    top: 30%;
     width: 40%;
+    left: 30%;
   }
-  /* line 313, ../sass/mein.sass */
+
+  /* line 315, ../sass/mein.sass */
+  .t-pane .pane-r .text-box {
+    left: 35%;
+  }
+  /* line 318, ../sass/mein.sass */
   .t-pane .l-text-r {
     top: 60%;
-    left: 53%;
+    margin-left: -20px;
+    left: 60%;
   }
-  /* line 317, ../sass/mein.sass */
+  /* line 323, ../sass/mein.sass */
   .t-pane .l-text-l {
     top: 75%;
-    left: 3%;
+    margin-left: -20px;
+    left: 10%;
   }
-  /* line 321, ../sass/mein.sass */
+  /* line 328, ../sass/mein.sass */
   .t-pane .r-text-t {
     top: 11.11111%;
   }
-  /* line 324, ../sass/mein.sass */
+  /* line 331, ../sass/mein.sass */
   .t-pane .r-text-m {
     top: 44.44444%;
   }
-  /* line 327, ../sass/mein.sass */
+  /* line 334, ../sass/mein.sass */
   .t-pane .r-text-b {
     top: 77.77778%;
   }
