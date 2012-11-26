@@ -228,6 +228,7 @@ canvas
 	position: fixed
 	top: 0px
 	left: 0px
+	height: 90px
 	z-index: 50
 	padding: 10px 10px 20px 30px
 	background-color: rgba(0, 0, 0, .2)
@@ -235,14 +236,10 @@ canvas
 	
 .nav-small
 	+border-right-radius(70px)
-	
-	.navlist
-	
-		.nav-img
-			margin-right: 30px
+	height: 90px
 		
 .logo
-	margin-top: 20px
+	margin-top: 12px
 
 .navlist
 	position: relative
@@ -268,8 +265,9 @@ canvas
 		
 	.nav-img
 		position: absolute
-		top: -14px
-		left: 70%
+		top: -12px
+		right: 6%
+		//left: 70%
 		//margin-right: 50px
 		//float: right
 		opacity: .8
@@ -307,7 +305,17 @@ canvas
 	right: 20px
 	
 @media all and (max-width: 1500px)
+	
+	.topnav
+		height: 200px
 		
+	.nav-small
+		height: 90px
+		
+		.navlist
+			.nav-img
+				right: 6%
+	
 	.navlist
 		li
 			width: 26%
@@ -324,8 +332,7 @@ canvas
 			
 		.nav-img
 			position: absolute
-			top: -14px
-			left: 70%
+			right: 21%
 			
 	.school, .resource
 		font-size: 40px
