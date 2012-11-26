@@ -71,18 +71,18 @@ function draw (){
 	//SET TEXT BOXES
 	$(".r-text-t", pane).each(function(){
 		leftedge = parseInt($(this).position().left) + parseInt($(this).css("margin-left"));
-		lat_t = parseInt($(this).position().top) + $(this).outerHeight()/2;
-		lat_t_b = parseInt($(this).position().top) + $(this).outerHeight();
+		lat_t = parseInt($(this).position().top) + parseInt($(this).css("margin-top")) + $(this).outerHeight()/2;
+		lat_t_b = parseInt($(this).position().top) + parseInt($(this).css("margin-top")) + $(this).outerHeight();
 	});
 	$(".r-text-m", pane).each(function(){
-		lat_m_t = parseInt($(this).position().top);
-		lat_m = parseInt($(this).position().top) + $(this).outerHeight()/2;
-		lat_m_b = parseInt($(this).position().top) + $(this).outerHeight();
+		lat_m_t = parseInt($(this).position().top) + parseInt($(this).css("margin-top"));
+		lat_m = parseInt($(this).position().top) + parseInt($(this).css("margin-top")) + $(this).outerHeight()/2;
+		lat_m_b = parseInt($(this).position().top) + parseInt($(this).css("margin-top")) + $(this).outerHeight();
 	});
 	$(".r-text-b", pane).each(function(){
-		lat_b_t = parseInt($(this).position().top);
-		lat_b = parseInt($(this).position().top) + $(this).outerHeight()/2;
-		lat_b_b = parseInt($(this).position().top) + $(this).outerHeight();
+		lat_b_t = parseInt($(this).position().top) + parseInt($(this).css("margin-top"));
+		lat_b = parseInt($(this).position().top) + parseInt($(this).css("margin-top")) + $(this).outerHeight()/2;
+		lat_b_b = parseInt($(this).position().top) + parseInt($(this).css("margin-top")) + $(this).outerHeight();
 	});
 	
 	//DRAW LINES

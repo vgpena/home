@@ -152,7 +152,8 @@ canvas
 		.text-box
 			position: absolute
 			width: 30%
-			
+			height: 90px
+			margin-top: -65px
 			
 	.r-sub-t
 		top: 0px
@@ -175,13 +176,15 @@ canvas
 	.r-text-b
 		top: $pane-height*(5/6)
 
-	
-.school, .resource
-	text-align: center
-	font-family: "Georgia"
-	font-size: 60px
-	line-height: 70px
-	color: #222
+	.school, .resource
+		text-align: center
+		font-family: "Georgia"
+		font-size: 60px
+		line-height: 70px
+		
+	a:link, a:visited, a:hover, a:active
+		color: #222
+		text-decoration: none
 
 .subpane
 	position: absolute
@@ -346,8 +349,15 @@ canvas
 	.invisipane
 		.text-box
 			top: 34%
+			
+
 		
 	.t-pane
+	
+		.school
+			font-size: 44px
+			line-height: 50px
+			
 		.pane-r
 			.text-box
 				left: 35%
@@ -357,30 +367,22 @@ canvas
 			left: 60%
 	
 		.l-text-l
-			top: $pane-height*(3/4)
+			top: $pane-height*(.7)
 			margin-left: -20px
 			left: 10%
-			
-		.r-text-t
-			top: $pane-height*(1/9)
-
-		.r-text-m
-			top: $pane-height*(4/9)
-
-		.r-text-b
-			top: $pane-height*(7/9)
 			
 @media all and (max-width: 1000px)
 	.text-box
 		top: 25%
 		width: 50%
 		left: 25%
-
-	.school
-		font-size: 32px
-		line-height: 38px
 	
 	.t-pane
+	
+		.school
+			font-size: 30px
+			line-height: 38px
+			
 		.l-text-r
 			top: $pane-height*(8/15)
 			left: 60%

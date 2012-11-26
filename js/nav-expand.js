@@ -58,7 +58,6 @@
 				});
 				$(window).on('resize', function(){
 					if ($this.hasClass("nav-small")){
-						pass
 					}
 					else{
 						if ($(window).width()>1500){
