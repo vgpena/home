@@ -23,18 +23,20 @@
 				$('.nav-img', $this).on('click', function(){
 					if ($this.hasClass("nav-small")){
 						if ($(document).width()>1500){
+							$this.removeClass("nav-small");
 							$this.animate({
 								width: "100%",
 								height: "90px",
-							}, "fast",  function(){$this.removeClass("nav-small"); 	$('.mid', el).each(function(){
+							}, "fast",  function(){ $('.mid', el).each(function(){
 									$(this).show();
 								}); $('.nav-search-li', el).show();} );
 						}
 						else{
+							$this.removeClass("nav-small");
 							$this.animate({
 								width: "100%",
 								height: "200px",
-							}, "fast",  function(){$this.removeClass("nav-small"); $(".image", $this).each(function(){
+							}, "fast",  function(){$(".image", $this).each(function(){
 									$(this).width("16.6%");
 								}); $('.mid', el).each(function(){
 									$(this).show();
@@ -42,11 +44,10 @@
 						};
 					}
 					else{
-						$this.addClass("nav-small");
 						$this.animate({
 							width: "400px",
 							height: "90px",
-						});
+						}, "fast", function(){$this.addClass("nav-small");});
 						$('.mid', el).each(function(){
 							$(this).hide("fast");
 						});
