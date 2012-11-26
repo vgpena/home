@@ -20,6 +20,21 @@
 				$('.image', $this).each(function(){
 					$(this).width("180px");
 				});
+				$(window).on('resize', function(){
+					if ($this.hasClass("nav-small")){
+						
+					}
+					else{
+						if ($(window).width()>1500){
+							$this.height("90px");
+							console.log($this);
+						}
+						else{
+							$this.height("200px");
+							console.log("small");
+						};
+					};
+				});
 				$('.nav-img', $this).on('click', function(){
 					if ($this.hasClass("nav-small")){
 						if ($(document).width()>1500){
@@ -57,20 +72,7 @@
 						});
 					};
 				});
-				$(window).on('resize', function(){
-					if ($this.hasClass("nav-small")){
-					}
-					else{
-						if ($(window).width()>1500){
-							$this.height("90px");
-							console.log($this);
-						}
-						else{
-							$this.height("200px");
-							console.log("small");
-						}
-					};
-				});
+
 			});
 		},
 	};
